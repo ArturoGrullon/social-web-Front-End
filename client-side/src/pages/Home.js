@@ -1,10 +1,16 @@
-import React from 'react'
-import {useQuery, gql} from '@apollo/client'
-import {Grid} from 'semantic-ui-react'
-import PostCard from '../Components/PostCard'
+import React, { useContext } from 'react';
+import {useQuery} from '@apollo/client';
+import {Grid} from 'semantic-ui-react';
 
+import PostCard from '../Components/PostCard';
+import {AuthContext} from '../Context/auth';
+import PostForm from '../Components/PostForm';
+import {FETCH_POSTS_QUERY} from '../Util/graphql';
+
+//Todo! Check the posts at the backend, they are missing data
 function Home() {
-    const {loading, data: {getPosts: posts} = {}} = useQuery(FETCH_POSTS_QUERY)
+    const {user} = useContext(AuthContext);
+    const {loading, data} = useQuery(FETCH_POSTS_QUERY);
 
     return (
         <Grid columns={3} divided>
@@ -12,33 +18,28 @@ function Home() {
                 <h1> Recent Posts</h1>
             </Grid.Row>
         <Grid.Row>
+            {user && (
+                <Grid.Column>
+                    <PostForm/>
+                </Grid.Column>
+            )}
+
             {loading ? 
                 (
                     <h1> Loading..</h1>
                 ) 
             : 
                 (
-                    posts && posts.map(post => (
+                    data && data.getPosts.map(post => (
                         <Grid.Column key = {post.id} style = {{marginBottom: 20}}>
                             <PostCard post = {post}/>
                         </Grid.Column>
-                    )))
+                    ))
+                    )
             }
         </Grid.Row>
         </Grid>
     )
-}
-
-
-const FETCH_POSTS_QUERY = gql`
-    query{
-        getPosts{
-            id
-            body
-            createdAt
-            username
-        }
-    }
-`
+};
 
 export default Home;

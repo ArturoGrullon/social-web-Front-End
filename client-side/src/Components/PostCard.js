@@ -3,6 +3,7 @@ import {Card, Button} from 'semantic-ui-react'
 import moment from 'moment';
 import { Link } from 'react-router-dom';
 
+//Todo! Check post at the back end 
 function PostCard({ post: { body, createdAt, id, username, likeCount, commentCount, likes }}) {
 
     const likeClick = () => console.log('Liked')
