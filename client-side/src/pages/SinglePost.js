@@ -17,7 +17,9 @@ function SinglePost(params) {
     },
   });
 
-  const redirectUserOnDelete = () => params.history.push("/");
+  function redirectUserOnDelete() {
+    params.history.push("/");
+  }
 
   let postMarkup = "";
   if (!getPost) {

@@ -22,7 +22,7 @@ function PostCard({
         <Card.Description> {body}</Card.Description>
       </Card.Content>
       <Card.Content extra>
-        <LikeButton user={logInUser} post={{ id, likes, likeCount }} />
+        <LikeButton user={logInUser} post={{ id, likeCount, likes }} />
         <Button
           basic
           color="blue"
