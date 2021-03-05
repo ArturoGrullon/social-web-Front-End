@@ -1,17 +1,18 @@
-import React from 'react'
-import {BrowserRouter as Router, Route} from 'react-router-dom'
-import {Container} from 'semantic-ui-react'
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Container } from "semantic-ui-react";
 
-import 'semantic-ui-css/semantic.min.css'
-import './App.css';
+import "semantic-ui-css/semantic.min.css";
+import "./App.css";
 
-import {AuthProvider} from './Context/auth'
-import AuthRoute from './Util/AuthRoute'
+import { AuthProvider } from "./Context/auth";
+import AuthRoute from "./Util/AuthRoute";
 
-import MenuBar from './Components/MenuBar'
-import Home from './pages/Home'
-import Login from './pages/Login'
-import Register from './pages/Register'
+import MenuBar from "./Components/MenuBar";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import SinglePost from "./pages/SinglePost";
 
 function App() {
   return (
@@ -19,9 +20,10 @@ function App() {
       <Router>
         <Container>
           <MenuBar />
-          <Route exact path='/' component={Home}/>
-          <AuthRoute exact path='/login' component={Login}/>
-          <AuthRoute exact path='/register' component={Register}/>
+          <Route exact path="/" component={Home} />
+          <AuthRoute exact path="/login" component={Login} />
+          <AuthRoute exact path="/register" component={Register} />
+          <AuthRoute exact path="/posts/:postId" component={SinglePost} />
         </Container>
       </Router>
     </AuthProvider>

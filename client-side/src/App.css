@@ -1,13 +1,18 @@
-.recent-posts{
+.recent-posts {
   text-align: center;
   display: block !important;
   margin-top: 1em;
 }
 
-.register-container{
-   margin-top: 20px;
-   width: 350px;
-   position: fixed; 
-   left: 50%;
-   transform: translateX(-50%);
+.register-container {
+  margin-top: 20px;
+  width: 350px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ui.red.button:focus,
+.ui.red.buttons .button:focus {
+  background-color: red;
 }

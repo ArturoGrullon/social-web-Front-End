@@ -1,20 +1,18 @@
-import React, {useContext} from 'react';
-import {Route, Redirect} from 'react-router-dom';
-import { AuthContext } from '../Context/auth';
+import React, { useContext } from "react";
+import { Route, Redirect } from "react-router-dom";
+import { AuthContext } from "../Context/auth";
 
-function AuthRoute({ component: Component, ...rest}){
-    const {user} = useContext(AuthContext);
+function AuthRoute({ component: Component, ...rest }) {
+  const { user } = useContext(AuthContext);
 
-    return(
-        <Route
-            {...rest}
-            render = {props =>
-                        user 
-                        ? <Redirect to= "/" /> 
-                        : <Component {...props} /> 
-                    }
-        />
-    );
+  return (
+    <Route
+      {...rest}
+      render={(props) =>
+        user ? <Redirect to="/" /> : <Component {...props} />
+      }
+    />
+  );
 }
 
 export default AuthRoute;
