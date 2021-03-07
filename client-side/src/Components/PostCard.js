@@ -8,21 +8,28 @@ import LikeButton from "../Components/LikeButton";
 import DeleteButton from "../Components/DeleteButton";
 
 function PostCard({
-  post: { body, createdAt, id, username, likeCount, commentCount, likes },
+  post: {
+    body,
+    createdAt,
+    id,
+    username,
+    likeCount,
+    comments,
+    commentCount,
+    likes,
+  },
 }) {
-  const { user: logInUser } = useContext(AuthContext);
+  const { user: currentUser } = useContext(AuthContext);
 
   return (
     <Card fluid>
       <Card.Content>
         <Card.Header>{username}</Card.Header>
-        <Card.Meta as={Link} to={`/posts/${id}`}>
-          {moment(createdAt).fromNow(true)}
-        </Card.Meta>
+        <Card.Meta>{moment(createdAt).fromNow(true)}</Card.Meta>
         <Card.Description> {body}</Card.Description>
       </Card.Content>
       <Card.Content extra>
-        <LikeButton user={logInUser} post={{ id, likeCount, likes }} />
+        <LikeButton user={currentUser} post={{ id, likeCount, likes }} />
         <Button
           basic
           color="blue"
@@ -38,7 +45,7 @@ function PostCard({
             content: commentCount,
           }}
         />
-        {logInUser && logInUser.username === username && (
+        {currentUser && currentUser.username === username && (
           <DeleteButton postId={id} />
         )}
       </Card.Content>

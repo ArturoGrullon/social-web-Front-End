@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { Button, Form } from "semantic-ui-react";
 import { gql, useMutation } from "@apollo/client";
 
-import { AuthContext, AuthProvider } from "../Context/auth";
+import { AuthContext } from "../Context/auth";
 import { useForm } from "../Util/hooks";
 
 function Login(props) {

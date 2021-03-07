@@ -4,6 +4,7 @@ import { gql, useMutation } from "@apollo/client";
 
 import { useForm } from "../Util/hooks";
 import { AuthContext } from "../Context/auth";
+
 function Register(props) {
   const [errors, setErrors] = useState({});
   const context = useContext(AuthContext);
