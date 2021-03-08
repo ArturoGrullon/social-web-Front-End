@@ -1,5 +1,5 @@
 import { gql, useMutation, useQuery } from "@apollo/client";
-import React, { useContext, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { Button, Card, Form, Grid } from "semantic-ui-react";
 
 import LikeButton from "../Components/LikeButton";
@@ -10,6 +10,7 @@ import DeleteButton from "../Components/DeleteButton";
 function SinglePost(params) {
   const postId = params.match.params.postId;
   const { user } = useContext(AuthContext);
+  const commentInputRef = useRef(null);
 
   const [commentBody, setCommentBody] = useState("");
 
@@ -22,6 +23,7 @@ function SinglePost(params) {
   const [createComment] = useMutation(SUBMIT_COMMENT_MUTATION, {
     update() {
       setCommentBody("");
+      commentInputRef.current.blur();
     },
     variables: {
       postId,
@@ -88,6 +90,7 @@ function SinglePost(params) {
                         name="comment"
                         value={commentBody}
                         onChange={(event) => setCommentBody(event.target.value)}
+                        ref={commentInputRef}
                       />
                       <button
                         type="submit"
