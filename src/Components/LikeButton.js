@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 import { gql, useMutation } from "@apollo/client";
 import { Button, Label, Popup } from "semantic-ui-react";
 
+/**
+ * Updates in the database the number of likes of a post
+ * @param {String} user
+ * @param {Object} post
+ */
 function LikeButton({ user, post: { id, likeCount, likes } }) {
   const [liked, setLiked] = useState(false);
 

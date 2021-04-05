@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 
 import { AuthContext } from "../Context/auth";
 
+/**
+ * Handles the display of the Navbar
+ * @returns
+ */
 function MenuBar() {
   const { user, logout } = useContext(AuthContext);
   const pathname = window.location.pathname;

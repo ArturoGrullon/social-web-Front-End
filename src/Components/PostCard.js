@@ -7,6 +7,11 @@ import { AuthContext } from "../Context/auth";
 import LikeButton from "../Components/LikeButton";
 import DeleteButton from "../Components/DeleteButton";
 
+/**
+ * Handles the display of the post in the forum
+ * @param {Object} post
+ * @returns
+ */
 function PostCard({
   post: {
     body,

@@ -4,6 +4,11 @@ import { gql, useMutation } from "@apollo/client";
 import { useForm } from "../Util/hooks";
 import { FETCH_POSTS_QUERY } from "../Util/graphql";
 
+/**
+ * Handles the creation of a post in the database
+ * @param {Object} params
+ * @returns
+ */
 function PostForm(params) {
   const { values, onChange, onSubmit } = useForm(createPostCallback, {
     body: "",

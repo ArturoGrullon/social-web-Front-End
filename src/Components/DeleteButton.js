@@ -3,6 +3,13 @@ import { Button, Confirm, Popup } from "semantic-ui-react";
 import { gql, useMutation } from "@apollo/client";
 import { FETCH_POSTS_QUERY } from "../Util/graphql";
 
+/**
+ * Deletes the passed comment id from the database
+ * @param {String} commentId
+ * @param {Function} callBack
+ * @param {Integer} postId
+ * @returns
+ */
 function DeleteButton({ commentId, callBack, postId }) {
   const [confirmOpen, setConfirmOpen] = useState(false);
 
