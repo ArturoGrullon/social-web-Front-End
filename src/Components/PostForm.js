@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Form } from "semantic-ui-react";
 import { gql, useMutation } from "@apollo/client";
+
 import { useForm } from "../Util/hooks";
 import { FETCH_POSTS_QUERY } from "../Util/graphql";
 
