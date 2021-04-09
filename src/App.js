@@ -9,10 +9,7 @@ import { AuthProvider } from "./Context/auth";
 import AuthRoute from "./Util/AuthRoute";
 
 import MenuBar from "./Components/MenuBar";
-import Home from "./pages/Home";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import SinglePost from "./pages/SinglePost";
+import { Home, Login, Register, SinglePost } from "./pages";
 
 function App() {
   return (
