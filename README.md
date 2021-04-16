@@ -84,6 +84,7 @@ Make sure to start back-end, repo: https://github.com/R2rit0/Social-Web-Back-End
 - [Apollo](https://www.apollographql.com/docs/react/get-started/) - Single data graph that you can query with GraphQL
 - [Semantic-UI](https://semantic-ui.com/) - CSS extension language
 - [GraphQL](https://graphql.org/) - Query language
+- [Netlify](https://www.netlify.com/) - An intuitive Git-based workflow and powerful serverless platform
 
 ## Acknowledgments 🎁
 
