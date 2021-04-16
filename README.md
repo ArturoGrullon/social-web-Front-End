@@ -1,91 +1,100 @@
 # Social-Web-Front-End
 
-# Description
+<h2 align="center">
+  <img src="https://github.com/" alt="Social Website" width="600px" />
+  <br>
+</h2>
+
+## Description 📄
 Website for intercomunication between users, enables then to create, comment, and comment on others posts. 
 
-# Prerequisites
-- @apollo/client
+## Features
+⚡️ Single product page\
+⚡️ Sign in/log in users\
+⚡️ Fully Responsive\
+⚡️ Phone Responsive
 
-```npm i @apollo/client```
-- @apollo/react-hooks
- 
-```npm i @apollo/react-hooks```
+## Prerequisites 📋
+
+You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [NPM](http://npmjs.com)) installed.
+```
+node@v10.16.0 or higher
+npm@6.9.0 or higher
+git@2.17.1 or higher
+```
+
+## Dependencies 🗃️
+- @apollo
 - @testing-library/jest-dom
-
-```npm i @testing-library/jest-dom```
 - @testing-library/react
- 
-```npm i @testing-library/react```
- - @testing-library/user-event
-  
-```npm i @testing-library/user-event```
-- apollo-link-context
- 
-```npm i apollo-link-context```
+- @testing-library/user-event
 - axios
-
-```npm i axios```
 - graphql
-
-```npm i graphql```
 - jwt-decode
-
-```npm i jwt-decode```
 - moment
-
-```npm i moment```
-
 - react
-
-```npm i react```
-- react-dom
-
-```npm i react-dom```
-- react-dom
-
-```npm i react-router-dom```
-- react-router-dom
-
-```npm i react-router-dom```
-- react-scripts
-
-```npm i react-scripts```
 - semantic-ui-css
-
-```npm i semantic-ui-css```
 - semantic-ui-react
-
-```npm i semantic-ui-react```
 - unirest
-
-```npm i unirest```
 - web-vitals
 
-```npm i web-vitals```
-# Installation
-```
-npm install 
-```
-```
-npm start
-```
-Staring the developming mode
-```
-npm run develop
-```
-Testing
-```
-npm test
-```
-Create build
-```
-npm run build
+## How To Use 🔧
+
+From your command line, first clone netflix-clone:
+
+```bash
+# Clone this repository
+$ git https://github.com/R2rit0/social-web-Front-End.git
+
+# Go into the repository
+$ cd social-web-Front-End
+
+# Remove current origin repository
+$ git remote remove origin
 ```
 
-# Contributing
-Issue Tracker: github.com/project/issues
+Then you can install the dependencies:
 
-# Contact 
+```bash
+# Install dependencies
+$ npm install
+
+# Start build file
+$ npm start
+
+# Start development server
+$ npm run develop
+
+# Start testing
+$ npm test
+
+# Create build
+$ npm run build
+```
+
+**Note**:
+Make sure to start back-end, repo: https://github.com/R2rit0/Social-Web-Back-End
+
+---
+
+## Technologies used 🛠️
+
+- [React](https://es.reactjs.org/) - Front-End JavaScript library.
+- [Jest](https://jestjs.io/) - Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
+- [Apollo](https://www.apollographql.com/docs/react/get-started/) - Single data graph that you can query with GraphQL
+- [Semantic-UI](https://semantic-ui.com/) - CSS extension language
+- [GraphQL](https://graphql.org/) - Query language
+
+## Acknowledgments 🎁
+
+Thanks to [Classsed](https://www.youtube.com/channel/UC2-slOJImuSc20Drbf88qvg).
+
+## Contributing 💡
+Issue Tracker: github.com/social-web-Front-End/issues.
+
+---
+
+# Contact 💬
 - [Gmail](https://mail.google.com/mail/u/0/?fs=1&to=ArturoM.Ducasse@gmail.com&su=Job-related&tf=cm "Gmail direct link")
 - [Github](https://github.com/R2rit0 "Github profile")
 - [Discord](https://discordapp.com/users/362837852507209730/ "Discord profile")
