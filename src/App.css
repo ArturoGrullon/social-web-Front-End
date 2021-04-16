@@ -16,3 +16,15 @@
 .ui.red.buttons .button:focus {
   background-color: red;
 }
+
+body {
+  background-image: url("./public/glen-carrie-_oNISBwMTwo-unsplash.jpg");
+  background-color: #cccccc;
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
