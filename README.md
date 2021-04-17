@@ -6,13 +6,13 @@
 </h2>
 
 ## Description 📄
-Website for intercomunication between users, enables then to create, comment, and comment on others posts. 
+Project for intercomunication between users through either comments or posts. Also, collects the likes, and comments at their posts.
 
 ## Features
-⚡️ Single product page\
+⚡️ Creation of posts\
 ⚡️ Sign in/log in users\
 ⚡️ Fully Responsive\
-⚡️ Phone Responsive
+⚡️ JWT
 
 ## Prerequisites 📋
 
@@ -81,10 +81,10 @@ Make sure to start back-end, repo: https://github.com/R2rit0/Social-Web-Back-End
 
 - [React](https://es.reactjs.org/) - Front-End JavaScript library.
 - [Jest](https://jestjs.io/) - Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
-- [Apollo](https://www.apollographql.com/docs/react/get-started/) - Single data graph that you can query with GraphQL
-- [Semantic-UI](https://semantic-ui.com/) - CSS extension language
-- [GraphQL](https://graphql.org/) - Query language
-- [Netlify](https://www.netlify.com/) - An intuitive Git-based workflow and powerful serverless platform
+- [Apollo](https://www.apollographql.com/docs/react/get-started/) - Single data graph that you can query with GraphQL.
+- [Semantic-UI](https://semantic-ui.com/) - CSS extension language.
+- [GraphQL](https://graphql.org/) - Query language.
+- [Netlify](https://www.netlify.com/) - An intuitive Git-based workflow and powerful serverless platform.
 
 ## Acknowledgments 🎁
 
