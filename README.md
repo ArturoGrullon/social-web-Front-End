@@ -1,7 +1,7 @@
 # Social-Web-Front-End
 
 <h2 align="center">
-  <img src="https://github.com/" alt="Social Website" width="600px" />
+  <img src="https://github.com/R2rit0/social-web-Front-End/blob/08a7d72d1483599b6e653d646ad5dbad702d7252/public/Screenshot%202021-04-19%20105722.png" alt="Social Website" width="600px" />
   <br>
 </h2>
 
