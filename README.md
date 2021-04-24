@@ -6,7 +6,7 @@
 </h2>
 
 ## Description 📄
-Project for intercomunication between users through either comments or posts. Also, collects the likes, and comments at their posts.
+This project lets users create post, and comment on post that belongs to others or of their own. Posts can only be created by users that are register to the website, in the same way post can only be deleted by its own user. It was created with react, and used Apollo for fetching querries created with graphQL, and create mutations. Also used jwt-decode for easy decoding of tokens, semantic-ui for easily style the diffent components, and moment library for the display of time in the website. It was challenging to integrate Apollo but the docs on the site are easily to digest. 
 
 ## Features
 ⚡️ Creation of posts\
@@ -28,7 +28,6 @@ git@2.17.1 or higher
 - @testing-library/jest-dom
 - @testing-library/react
 - @testing-library/user-event
-- axios
 - graphql
 - jwt-decode
 - moment
